@@ -17,14 +17,16 @@ public class RoundingError {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        int i;
         double N,N1,N2;
         String NumberInt = JOptionPane.showInputDialog("Please enter a mumber");
-        N=Double.valueOf(NumberInt);
-        N1=Math.sqrt(N*N);
-        N2=(N1-N);
-        System.out.print("The square root of the square=" + N1);
+        i=Integer.parseInt(NumberInt);
+        N1=(double)i;
+        N1=Math.sqrt(N1);
+        N2=Math.pow(N1,2);
+        System.out.print("The square root of the square=" + N2);
         System.out.print("\n");
-        System.out.print("The round off error=" + N2);
+        System.out.print("The round off error=" + (N2-i));
     }
     
 }
