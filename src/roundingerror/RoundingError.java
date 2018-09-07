@@ -23,7 +23,6 @@ public class RoundingError {
         N1=Math.sqrt(N*N);
         N2=(N1-N);
         System.out.print("The square root of the square=" + N1);
-        System.out.print("\n");
         System.out.print("The round off error=" + N2);
     }
     
