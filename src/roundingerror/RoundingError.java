@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * The purpose is to compares the square of the square root of any number.
  */
 
 package roundingerror;
@@ -9,7 +7,8 @@ import javax.swing.*;
 
 /**
  *
- * @author glSon8840
+ * @author Gloria Song
+ * Date : 2018/9/7
  */
 public class RoundingError {
 
@@ -20,13 +19,16 @@ public class RoundingError {
         int i;
         double N,N1,N2;
         String NumberInt = JOptionPane.showInputDialog("Please enter a mumber");
+        //Above to claim varibales of different types.
         i=Integer.parseInt(NumberInt);
         N1=(double)i;
         N1=Math.sqrt(N1);
         N2=Math.pow(N1,2);
+        //The calculation.
         System.out.print("The square root of the square=" + N2);
         System.out.print("\n");
         System.out.print("The round off error=" + (N2-i));
+        System.out.print("\n");
     }
     
 }
